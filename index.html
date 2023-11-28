@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/form.css">
 </head>
 <body>
-    <h1>Hello world!</h1>
+    
+    <form id="form-login" action="/auth/login" method="post">
+        <!-- Email input -->
+        <div class="form-outline form-group mb-4">
+            <label for="loginName">Username</label>
+            <input type="text" id="loginName" name="loginName" class="form-control" />
+            <span class="message_error"></span>
+        </div>
+        <!-- Password input -->
+        <div class="form-outline form-group mb-4">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" name="loginPassword" class="form-control" />
+            <span class="message_error"></span>
+        </div>
+        <!-- 2 column grid layout -->
+        <div class="row mb-4 box-config-account">
+            <div class="col-6 d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check mb-3 mb-md-0">
+                    <input name="remember" class="form-check-input" type="checkbox" value="" id="loginCheck"
+                           checked />
+                    <label class="form-check-label" for="loginCheck"> Remember me </label>
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <!-- Simple link -->
+                <a href="/forget-password">Forgot password?</a>
+            </div>
+        </div>
+        <!-- Submit button -->
+        <button id="login-btn" type="submit" name="submitLogin"  class="btn btn-primary btn-submit-form">Sign in</button>
+        <!-- Register buttons -->
+    </form>
+    <script src="./assets/js/validator.js"></script>
+    <script>
+        const messageUsername = "Username must be form 6 to 100 character",
+                    messagePassword = "Password must greater 8 character";
+            const username = document.getElementById('loginName'),
+                    password = document.getElementById('loginPassword');
+        const inputsToValidateLogin = [
+        {
+            element: username, 
+            message: messageUsername, 
+            regex: /^[a-zA-Z0-9.,!#$%&'*+/=?^_]{6,100}$/,
+            type: "text"
+        } ,
+        {
+            element: password, 
+            message: messagePassword, 
+            regex: /^[a-zA-Z0-9.,!#$%&'*+/=?^_]{8,}$/,
+            type: "text"
+        }
+    ];
+    validation(inputsToValidateLogin, document.querySelector("#login-btn"));
+    </script>
 </body>
 </html>
