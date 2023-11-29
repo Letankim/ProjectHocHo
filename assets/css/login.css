@@ -63,10 +63,14 @@ svg.LgbsSe-Bz112c {
     display: block;
     width: 14px;    
 }
-.invalid span {
-    color: red;
-
+.box-password {
+    position: relative;
 }
-.invalid input{
-    border: 1px solid red;
+
+.box-password i {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    cursor: pointer;
+    font-size: 1.3rem;
 }

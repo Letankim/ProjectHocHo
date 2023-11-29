@@ -108,11 +108,8 @@
   </script>
   <script>
     $('#signinButton').click(function() {
-      auth2.grantOfflineAccess({
-      'redirect_uri': 'postmessage',
-      'client_id': '20311001743-42a2raf50afkrglq1khm1j3ekork2692.apps.googleusercontent.com',
-      'client_secret': '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'
-    }).then(signInCallback);
+      // signInCallback defined in step 6.
+      auth2.grantOfflineAccess().then(signInCallback);
     });
   </script>
   <!-- Last part of BODY element in file index.html -->
