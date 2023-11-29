@@ -1,4 +1,3 @@
-
 function validation(inputsToValidate, submitBtn) {
 // for each item in array input check when blur and when enter in input again clear show error
     inputsToValidate.forEach(function (item) {
@@ -55,7 +54,6 @@ function validation(inputsToValidate, submitBtn) {
         parentNode.querySelector('.message_error').innerHTML = "";
     }
 //  handle submit event check if all input pass. send data else not send
-
     submitBtn.addEventListener('click', function (e) {
         let isValid = true;
         inputsToValidate.forEach(function (item) {
