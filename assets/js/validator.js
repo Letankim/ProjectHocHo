@@ -2,13 +2,13 @@ function validation(inputsToValidate, submitBtn) {
 // for each item in array input check when blur and when enter in input again clear show error
     
 inputsToValidate.forEach(function (item) {
-       
         item.element.addEventListener('blur', function () {
             checkInput(item);
-            console.log(item)
         })
         item.element.addEventListener('input', function () {
             const parentNode = item.element.parentElement;
+            parentNode.classList.remove("valid");
+            parentNode.classList.remove("invalid");
             parentNode.querySelector('.message_error').innerHTML = "";
         })
     })
