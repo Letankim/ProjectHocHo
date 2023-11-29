@@ -63,3 +63,10 @@ svg.LgbsSe-Bz112c {
     display: block;
     width: 14px;    
 }
+.invalid span {
+    color: red;
+
+}
+.invalid input{
+    border: 1px solid red;
+}
