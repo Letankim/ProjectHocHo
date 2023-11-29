@@ -17,10 +17,8 @@ inputsToValidate.forEach(function (item) {
 // else return true and call function show success
     function checkInput(item) {
         let messageError = '';
-        console.log(item.type)
         if(item.type === "text") {
             if(item.element.value === "") {
-                
                 messageError = "Trường này không được để trống";
             } else
             if (!item.element.value.match(item.regex)) {
@@ -48,6 +46,9 @@ inputsToValidate.forEach(function (item) {
     function showErrorMessage(element, message) {
         const parentNode = element.parentElement;
         parentNode.classList.add("invalid");
+        if(parentNode.classList.contains("valid")) {
+            parentNode.classList.remove("valid");
+        }
         parentNode.querySelector('.message_error').style.display = 'block';
         parentNode.querySelector('.message_error').innerHTML = message;
     }
@@ -55,6 +56,7 @@ inputsToValidate.forEach(function (item) {
     function handleSuccess(element) {
         const parentNode = element.parentElement;
         parentNode.classList.remove("invalid");
+        parentNode.classList.add("valid");
         parentNode.querySelector('.message_error').style.display = 'none';
         parentNode.querySelector('.message_error').innerHTML = "";
     }
