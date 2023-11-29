@@ -1,8 +1,11 @@
 function validation(inputsToValidate, submitBtn) {
 // for each item in array input check when blur and when enter in input again clear show error
-    inputsToValidate.forEach(function (item) {
+    
+inputsToValidate.forEach(function (item) {
+       
         item.element.addEventListener('blur', function () {
             checkInput(item);
+            console.log(item)
         })
         item.element.addEventListener('input', function () {
             const parentNode = item.element.parentElement;
@@ -14,8 +17,10 @@ function validation(inputsToValidate, submitBtn) {
 // else return true and call function show success
     function checkInput(item) {
         let messageError = '';
+        console.log(item.type)
         if(item.type === "text") {
             if(item.element.value === "") {
+                
                 messageError = "Trường này không được để trống";
             } else
             if (!item.element.value.match(item.regex)) {
