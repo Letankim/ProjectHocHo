@@ -1,6 +1,6 @@
-<html itemscope itemtype="http://schema.org/Article"></html>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/Article">
 
 <head>
   <meta charset="UTF-8">
@@ -15,11 +15,13 @@
   <script>
     function start() {
       gapi.load('auth2', function() {
+        
         auth2 = gapi.auth2.init({
           client_id: '20311001743-42a2raf50afkrglq1khm1j3ekork2692.apps.googleusercontent.com',
-          // Scopes to request in addition to 'profile' and 'email'
-          //scope: 'additional_scope'
+          // // Scopes to request in addition to 'profile' and 'email'
+          // scope: 'profile email additional_scope',
         });
+        console.log(auth2)
       });
     }
   </script>
@@ -115,7 +117,6 @@
   <!-- Last part of BODY element in file index.html -->
 <script>
   function signInCallback(authResult) {
-    console.log(authResult)
     if (authResult['code']) {
     
       // Hide the sign-in button now that the user is authorized, for example:
@@ -124,7 +125,7 @@
       // Send the code to the server
       $.ajax({
         type: 'POST',
-        url: 'http://example.com/storeauthcode',
+        url: 'http://127.0.0.1:5500/ProjectHocHo/user/login.html',
         // Always include an `X-Requested-With` header in every AJAX request,
         // to protect against CSRF attacks.
         headers: {
