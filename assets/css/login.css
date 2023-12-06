@@ -63,14 +63,14 @@ svg.LgbsSe-Bz112c {
     display: block;
     width: 14px;    
 }
+
 .box-password {
     position: relative;
 }
 
 .box-password i {
     position: absolute;
-    right: 10px;
     top: 13px;
-    cursor: pointer;
+    right: 10px;
     font-size: 1.3rem;
 }

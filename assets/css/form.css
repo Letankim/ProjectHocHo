@@ -52,9 +52,10 @@
 
 .form-group.valid .form-control,
 .form-group.valid textarea {
-    border: 1px solid rgb(161 255 177) !important;
-    box-shadow: 0px 0px 2px rgb(161 255 177);
+    border: 1px solid #3af3af !important;
+    box-shadow: 0px 0px 2px rgba(5, 221, 59, 0.8);
 }
+
 
 .form-group .message_error {
     color: #f33a58;
