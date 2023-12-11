@@ -1,0 +1,169 @@
+.navbar-nav.ml-auto {
+    margin-left: auto;
+    margin-right: 10px;
+
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-white {
+    margin-top: -5px;
+}
+
+.navbar-nav.mr-auto {
+    margin-left: 15px;
+
+}
+
+.nav-link {
+    font-size: 12px;
+    color: black;
+}
+
+span {
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+
+}
+
+.nav-item-header a {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+}
+
+.nav-item-header img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-item-header {
+    background-color: #E8E8E8;
+    width: 170px;
+    margin-left: 10px;
+    border-bottom-left-radius: 5px;
+}
+
+.navbar-brand {
+    width: 142px;
+    height: 52px;
+    margin-left: 10px;
+}
+
+.navbar-brand img {
+    width: 188px;
+    height: 35px;
+}
+
+.nav-item.dropdown {
+    margin-left: 10px;
+}
+
+.form-inline.my-2.my-lg-0 {
+    display: flex;
+    background-color: #f4f4f4;
+    width: 630px;
+    margin-left: 30px;
+}
+
+.btn.btn-outline-success.my-2.my-sm-0 {
+    background-color: chocolate;
+    color: white;
+
+}
+
+.btn-outline-success {
+    --bs-btn-border-color: chocolate;
+}
+
+.form-control.mr-sm-2 {
+    background-color: #f4f4f4;
+
+}
+
+.nav-link.dropdown-toggle {
+    font-size: 15px;
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.custom-nav-item .nav-link i {
+    color: black;
+    /* Set the color to a different color (e.g., orange) */
+}
+
+.custom-nav-item-second .nav-link i {
+    color: black;
+    /* Set the color to a different color (e.g., orange) */
+}
+
+.custom-nav-item-third .nav-link i {
+    color: black;
+    /* Set the color to a different color (e.g., orange) */
+}
+
+.custom-nav-list .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.custom-nav-list .nav-link i {
+    margin-right: 10px;
+    /* Adjust the right margin for spacing between icon and text */
+}
+
+.custom-nav-item-second .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.custom-nav-item-third .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:-5px;
+    margin-left:5px;
+}
+
+.custom-nav-item-five .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:-5px;
+
+
+}
+
+.custom-nav-item-four .nav-link {
+    width: 144px;
+    height: 36px;
+    border: 5px solid #FF8800;
+    color: white;
+    border-radius: 5px;
+    /* Adjust the border-radius for rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item.dropdown:hover .nav-link.dropdown-toggle {
+    color: #000000; /* Màu đen khi đưa chuột vào */
+  }
+  
+@media (max-width: 768px) {
+    /* Styles for screens with a maximum width of 768 pixels or less */
+    .navbar-nav {
+      flex-direction: column;
+    }
+  
+    .form-inline.my-2.my-lg-0 {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
