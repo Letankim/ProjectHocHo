@@ -3,10 +3,19 @@
     flex-direction: column;
     align-items: flex-start;
 }
+a {
+    text-decoration: none;
+}
+.row {
+    padding-top: 50px;
+}
 
 .Contact-User {
     border-radius: 30px;
     background: aqua;
     padding: 5px 10px;
     margin-top: 25px;
+}
+.title-other-post {
+    padding-bottom: 20px;
 }
