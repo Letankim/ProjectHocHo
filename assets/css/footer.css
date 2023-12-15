@@ -1,0 +1,210 @@
+footer {
+    margin-top: 50px;
+
+}
+
+#content {
+
+    overflow: hidden;
+    height: auto;
+    transition: height 0s;
+
+    width: 950px;
+    margin: auto;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.collapsed {
+    height: 120px !important;
+    filter: blur(0.1px);
+
+}
+
+.collapsed:nth-child(2) {
+    height: 120px !important;
+}
+
+
+
+.p1 {
+    color: black;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#content p:nth-child(2) {
+    color: #777;
+}
+
+#toggleButton {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: cornflowerblue;
+    font-size: 14px;
+}
+
+.op-ul li {
+    margin-top: 12px;
+    list-style-type: none;
+
+
+
+}
+
+.op-li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #777;
+
+}
+
+.op-li p {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+
+}
+
+.op-second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: max-height 0.5s;
+    overflow: auto;
+    max-height: 1000px;
+    transition: height 0s;
+    max-height: 100%;
+    width: 75%;
+    margin: auto;
+    /* Canh giữa theo chiều ngang */
+}
+
+.op-second::-webkit-scrollbar {
+    width: 0.5em;
+
+}
+
+.op-second::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+
+}
+
+.op-second::-webkit-scrollbar-track {
+    background-color: transparent;
+
+}
+
+.op-1,
+.op-2,
+.op-3 {
+    margin: 0 100px;
+
+}
+
+#toggleButton1 {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: cornflowerblue;
+    font-size: 14px;
+}
+
+.end-op1 img {
+    width: 87px;
+    height: 87px;
+
+}
+
+.end-logo img {
+    width: 87px;
+    height: 32px;
+    margin-bottom: 12px;
+
+
+}
+
+.end-op1 {
+    width: 300px;
+
+
+}
+
+.end-all {
+    display: flex;
+    width: 300px;
+}
+
+.end-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.end {
+    display: flex;
+    margin-left: 220px;
+    align-items: center;
+    justify-content: center;
+}
+
+.end-op1 p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.end-sq a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #777;
+
+}
+
+.end-q {
+
+    margin-bottom: 10px;
+    /* Khoảng cách giữa các phần tử theo chiều dọc */
+}
+
+.form-control {
+    font-size: 15px;
+    /* Adjust the font size as needed */
+}
+
+.end-op2 ul {
+    list-style-type: none;
+}
+
+.end-s p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.end-op3 p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.end-op1,
+.end-op2,
+.end-op3 {
+    flex: 1;
+    /* Phần tử chiếm toàn bộ không gian còn trống */
+    padding: 0 10px;
+    /* Khoảng cách giữa các phần tử */
+
+}

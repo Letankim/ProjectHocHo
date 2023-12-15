@@ -57,17 +57,33 @@ span {
 .nav-item.dropdown {
     margin-left: 10px;
 }
-
+.form-control.mr-sm-2 {
+    border:none;
+}
 .form-inline.my-2.my-lg-0 {
     display: flex;
     background-color: #f4f4f4;
     width: 630px;
     margin-left: 30px;
-}
+    height: 35px;
+    position: relative;
+    border:none;
 
+}
+.btn.btn-outline-success.my-2.my-sm-0 i {
+    font-size: 1.8rem; /* Increase the icon size as needed */
+  }
 .btn.btn-outline-success.my-2.my-sm-0 {
-    background-color: chocolate;
+    background-color: #fa6819;
     color: white;
+    width:48px;
+    height:28px;
+    border:none;
+    position: absolute;
+    right:5px;
+    top:50%;
+    transform: translateY(-50%);
+    border:5px;
 
 }
 
@@ -108,8 +124,12 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right:3px;
+    
 }
-
+i.bx.bx-bell {
+    color:#222222;
+  }
 
 
 .custom-nav-list .nav-link i {
@@ -137,7 +157,7 @@ span {
     align-items: center;
     justify-content: center;
     margin-top:-5px;
-
+    margin-left:5px;
 
 }
 
@@ -151,6 +171,8 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left:5px;
+    margin-bottom:5px;
 }
 .nav-item.dropdown:hover .nav-link.dropdown-toggle {
     color: #000000; /* Màu đen khi đưa chuột vào */
@@ -167,3 +189,6 @@ span {
       margin-left: 0;
     }
   }
+.navbar-dark .navbar-nav .nav-link {
+    color:#000000;
+}
