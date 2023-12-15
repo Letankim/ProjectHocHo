@@ -3,6 +3,10 @@
     margin-right: 10px;
 
 }
+.navbar {
+    width: 100%;
+  }
+
 
 .navbar.navbar-expand-lg.navbar-light.bg-white {
     margin-top: -5px;
@@ -63,11 +67,12 @@ span {
 .form-inline.my-2.my-lg-0 {
     display: flex;
     background-color: #f4f4f4;
-    width: 630px;
+    width: 500px;
     margin-left: 30px;
     height: 35px;
     position: relative;
     border:none;
+    flex:1;
 
 }
 .btn.btn-outline-success.my-2.my-sm-0 i {
